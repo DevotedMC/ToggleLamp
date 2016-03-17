@@ -1,0 +1,6 @@
+name: ToggleLamp
+main: com.bigbrainiac10.togglelamp.ToggleLamp
+version: 1.0
+author: bigbrainiac10
+description: Makes lamps toggleable silly!
+depend: [Citadel, NameLayer]
