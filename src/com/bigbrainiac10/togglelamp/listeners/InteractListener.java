@@ -3,7 +3,6 @@ package com.bigbrainiac10.togglelamp.listeners;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockState;
 import org.bukkit.craftbukkit.v1_9_R1.CraftWorld;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

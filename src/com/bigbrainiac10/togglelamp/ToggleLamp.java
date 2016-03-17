@@ -37,7 +37,7 @@ public class ToggleLamp extends JavaPlugin{
 		logger.log(Level.INFO, message);
 	}
 	
-	public static boolean isRedstoneMaterial(Material mat){
+	public boolean isRedstoneMaterial(Material mat){
 		if (redstoneMats.contains(mat)) {
 			return true;
 		}
