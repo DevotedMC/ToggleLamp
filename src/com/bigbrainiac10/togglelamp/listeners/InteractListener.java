@@ -62,10 +62,9 @@ public class InteractListener implements Listener {
 				if(!r.getGroup().isMember(eventPlayer.getUniqueId()))
 					return;
 			}
-		}
-		
-		if(TLConfigManager.reinforcementsOnly())
+		}else if(TLConfigManager.reinforcementsOnly()){
 			return;
+		}
 		
 		event.setCancelled(true);
 		
