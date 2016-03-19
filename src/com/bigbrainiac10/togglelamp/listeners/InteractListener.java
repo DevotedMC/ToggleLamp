@@ -54,8 +54,6 @@ public class InteractListener implements Listener {
 				return;
 		}
 		
-		event.setCancelled(true);
-		
 		if(rm.isReinforced(clickedBlock)){
 			Reinforcement rein = rm.getReinforcement(clickedBlock);
 			
@@ -66,9 +64,10 @@ public class InteractListener implements Listener {
 			}
 		}
 		
-		/*BlockState state = clickedBlock.getState();
-		state.setType(clickedBlockMat.equals(Material.REDSTONE_LAMP_ON) ? Material.REDSTONE_LAMP_OFF : Material.REDSTONE_LAMP_ON);
-		state.update(true);*/
+		if(TLConfigManager.reinforcementsOnly())
+			return;
+		
+		event.setCancelled(true);
 		
 		try {
 			switchLamp(clickedBlock, !clickedBlockMat.equals(Material.REDSTONE_LAMP_ON));
