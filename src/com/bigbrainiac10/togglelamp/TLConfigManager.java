@@ -14,4 +14,8 @@ public class TLConfigManager {
 		return config.getBoolean("debug");
 	}
 	
+	public static boolean reinforcementsOnly(){
+		return config.getBoolean("reinforcementsOnly");
+	}
+	
 }
